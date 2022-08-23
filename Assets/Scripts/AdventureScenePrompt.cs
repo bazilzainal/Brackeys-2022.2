@@ -1,5 +1,7 @@
 ﻿using System;
+using Newtonsoft.Json.Serialization;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AdventureScenePrompt : MonoBehaviour
@@ -22,4 +24,9 @@ public class AdventureScenePrompt : MonoBehaviour
         onClick = branch;
 
     }
+}
+
+public enum GameKey
+{
+    Action,
 }
