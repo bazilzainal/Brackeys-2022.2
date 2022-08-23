@@ -10,7 +10,7 @@ public class AdventureSceneData : ScriptableObject
 
     [SerializeField] private string title;
     [SerializeField] private Sprite background;
-    [SerializeField] private string description;
+    [SerializeField] [TextArea] private string description;
 
     [SerializeField] private List<SceneBranch> scenes;
 

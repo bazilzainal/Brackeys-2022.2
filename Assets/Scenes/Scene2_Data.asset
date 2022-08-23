@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Scene 2
   background: {fileID: 21300000, guid: 2b3f5ff80efb446928fc656e1f9a5580, type: 3}
-  description: TESTTESTTESTTEST
+  description: Test scene 2
   scenes:
-  - choice: 
-    nextScene: {fileID: 11400000}
+  - choice: Back
+    nextScene: {fileID: 11400000, guid: d9092b1a80e7f4dcf9fbd83029deec56, type: 2}
+  - choice: Back
+    nextScene: {fileID: 11400000, guid: d9092b1a80e7f4dcf9fbd83029deec56, type: 2}
+  - choice: Back
+    nextScene: {fileID: 11400000, guid: d9092b1a80e7f4dcf9fbd83029deec56, type: 2}
