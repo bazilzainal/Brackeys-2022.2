@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Scene1_Data
   m_EditorClassIdentifier: 
   title: The Intro
-  background: {fileID: 21300000, guid: 2b3f5ff80efb446928fc656e1f9a5580, type: 3}
+  background: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   description: The bot woke up with a sore joint. Beep boop
   scenes:
-  - choice: Scene 1
-    nextScene: {fileID: 11400000}
-  - choice: Scene 2
-    nextScene: {fileID: 11400000, guid: 1513be52e34b64a2c8935c185d4c5d6f, type: 2}
-  - choice: Scene 3
-    nextScene: {fileID: 11400000, guid: 0859e95c7c4b64ca4b00aef8d353454c, type: 2}
+  - Amount: 0
+    Choice: 0
+    NextScene: {fileID: 11400000}
+  - Amount: 0
+    Choice: 0
+    NextScene: {fileID: 11400000, guid: 1513be52e34b64a2c8935c185d4c5d6f, type: 2}
+  - Amount: -100
+    Choice: -100
+    NextScene: {fileID: 11400000, guid: 0859e95c7c4b64ca4b00aef8d353454c, type: 2}

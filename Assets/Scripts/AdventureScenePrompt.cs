@@ -7,22 +7,27 @@ using UnityEngine;
 public class AdventureScenePrompt : MonoBehaviour
 {
     [SerializeField] private TMP_Text prompt;
-    private Action<SceneBranch> onClick;
-    private SceneBranch sceneBranch;
+    private Action<PromptData> onClick;
+    private PromptData promptData;
 
     public void HandleClick()
     {
         // dosomething
-        onClick.Invoke(sceneBranch);
+        onClick.Invoke(promptData);
+        
 
     }
 
-    public void BindPrompt(SceneBranch data, Action<SceneBranch> branch)
+    public void BindPrompt(PromptData data, Action<PromptData> branch)
     {
-        sceneBranch = data;
-        prompt.text = data.choice;
+        promptData = data;
+        prompt.text = data.Choice;
         onClick = branch;
 
+    }
+
+    public void AdjustHealth(int amount)
+    {
     }
 }
 

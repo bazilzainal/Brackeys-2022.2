@@ -35,9 +35,9 @@ public class AdventureScene : MonoBehaviour
 
     }
 
-    private void onClick(SceneBranch data)
+    private void onClick(PromptData data)
     {
-        BindData(data.nextScene);
+        BindData(data.PromptChosen());
 
     }
 
