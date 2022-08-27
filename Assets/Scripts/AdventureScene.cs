@@ -9,13 +9,17 @@ public class AdventureScene : MonoBehaviour
     [SerializeField] private TMP_Text sceneText;
     [SerializeField] private Image image;
     [SerializeField] private List<AdventureScenePrompt> prompts;
-    
+    private AdventureSceneData data;
+    private float timer;
+
+
     public void BindData(AdventureSceneData data)
     {
+        this.data = data;
         data.OnSceneLoaded();
         title.text = data.Title;
         sceneText.text = data.Description;
-        image.sprite = data.Background;
+        image.sprite = data.Backgrounds[0];
 
         int i = 0;
         while (i < data.Scenes.Count)
@@ -30,6 +34,14 @@ public class AdventureScene : MonoBehaviour
             i++;
         }
         
+
+    }
+
+    private void Update()
+    {
+
+        image.sprite = data.Backgrounds[(int)timer % (data.Backgrounds.count)];
+        timer += Time.deltaTime;
 
     }
 
