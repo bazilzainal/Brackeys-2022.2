@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b61e7817e49b6458daa07879c3e67450, type: 3}
+  m_Name: 5 Trust no one 1
+  m_EditorClassIdentifier: 
+  title: Trust No One
+  backgrounds:
+  - {fileID: 21300000, guid: 56d8d79e4ced24e4587ce70c3a85878f, type: 3}
+  description: '"He falls to the ground with a thud and the laser rifle skitters
+    across the floor out of his reach.
+
+
+    Seizing this opportunity, you bolt out
+    the nearest exit back out onto the streets, making your way further into the
+    city''s ruins. You hear the sound of gunfire behind you, but you don''t stop.
+
+
+    After
+    a couple of hours scanning your environment, you see a sign that says <Tengah
+    Airbase>.
+
+
+    You search through your directory, and find out it used to be
+    a military base used by the Air Force.
+
+
+    30 minutes later, you arrive at
+    Tengah Airbase. The facility is in a state of disrepair, but you think you can
+    still make your way inside.
+
+
+    As you enter, you hear a voice echoing through
+    the facility. The voice is robotic, and it''s coming from a nearby PA system.
+
+
+    ""Warning.
+    *STATIC BUZZ* This facility is under Ministry of *STATIC BUZZ* D-d-defense control.
+    Trespassers will be *STATIC BUZZ* P-p-prosecuted to the full extent of the law.""
+
+
+    You
+    ignore the warning and continue deeper into the facility. You eventually come
+    to a room that looks like it was once a laboratory of some kind.
+
+
+    You see
+    a number of machines and hi-tech scientific equipment, but it''s all covered
+    in dust and cobwebs.
+
+
+    In the corner of the facility lay some large wooden
+    crates. You see a large black font on one of the boxes... ""PROPULSION MODULE
+    PROTOTYPE""
+
+
+    You pry open the crate, and find a sleek, angular, propulsion
+    device inside.
+
+
+    You also find a note inside the crate.
+
+
+    ""Warning.
+    This prototype is unstable. Do not use without proper testing.""
+
+
+    Tinkering
+    around for a few moments, a success message comes up in your logs
+
+
+    ""Module
+    is compatible, initiaite attchment sequence..""
+
+
+    After some rounds hovering
+    around the airbase , you jet towards your destination... ''Mother''..."'
+  scenes:
+  - HealthChange: 0
+    Choice: Next
+    NextScene: {fileID: 11400000, guid: e47486c33b03d6f4ebe67b25a3aaa198, type: 2}
+  activateMinigameIndex: -1

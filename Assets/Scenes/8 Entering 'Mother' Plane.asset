@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b61e7817e49b6458daa07879c3e67450, type: 3}
+  m_Name: 8 Entering 'Mother' Plane
+  m_EditorClassIdentifier: 
+  title: Entering 'Mother' Plane
+  backgrounds:
+  - {fileID: 21300000, guid: 56d8d79e4ced24e4587ce70c3a85878f, type: 3}
+  description: '"You fly over a sprawling iron landscape, filled with large buildings
+    and tall towers.
+
+
+    Astria signals to you a docking tower up ahead. A large
+    sign on the side of the tower says Sector 17D
+
+
+    As you enter the docking
+    bay, an alarm goes off and red lights begin flashing.
+
+
+    ""HOSTILES DETECTED.
+    HUMAN TRESPASSERS MUST BE DEALT WITH"""'
+  scenes:
+  - HealthChange: 0
+    Choice: 
+    NextScene: {fileID: 0}
+  activateMinigameIndex: -1

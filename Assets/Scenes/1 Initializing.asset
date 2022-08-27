@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b61e7817e49b6458daa07879c3e67450, type: 3}
-  m_Name: Scene1_Data
+  m_Name: 1 Initializing
   m_EditorClassIdentifier: 
-  title: The Intro
+  title: Initializing...
   backgrounds:
   - {fileID: 21300000, guid: 56d8d79e4ced24e4587ce70c3a85878f, type: 3}
   - {fileID: 21300000, guid: b8a97b844a9d5194098abfa09ff343f6, type: 3}
@@ -115,15 +115,55 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f5f614e4207578045b34a559d1a44b20, type: 3}
   - {fileID: 21300000, guid: 438e0aad7eb138e469e9e91caa26a31d, type: 3}
   - {fileID: 21300000, guid: 59bfcf947b5ecc84b85e60348d9ed05b, type: 3}
-  description: The bot woke up with a sore joint. Beep boop
+  description: '"Klick-2500 Boots up in a strange place
+
+
+    Initializing boot sequence...
+
+    Memory
+    Error, rebooting system...
+
+    Loading Operating System... Error last update
+    21/8/2037
+
+    Installing latest update 16/8/2169
+
+    Update Completed
+
+    Klick-2500
+    System Booted
+
+
+    You buzz to life, jerking your slightly rusty joints as sand
+    shakes off your body.
+
+
+    Getting GPS Location.... Singapore, 40.741895, -73.989308
+
+    Scanning
+    for networks... No networks found
+
+    Activate Thermal Cameras...
+
+
+    Your
+    eyes, which were little more than black dots on your featureless face, scanned
+    the horizon. It was a bleak and barren landscape, with not a living thing in
+    sight.
+
+
+    Area Assessment Protocol Initializing..
+
+
+    You lift yourself
+    up and begin to walk, your pace slow and steady.
+
+    Putting one metal foot
+    forward after another, you slowly make your way across the desert, leaving behind
+    a short trail of footprints in the sand that quickly disappears to the desert
+    wind."'
   scenes:
   - HealthChange: 0
-    Choice: To Flappy
-    NextScene: {fileID: 11400000, guid: 0859e95c7c4b64ca4b00aef8d353454c, type: 2}
-  - HealthChange: 0
-    Choice: 0
+    Choice: Next
     NextScene: {fileID: 11400000, guid: 1513be52e34b64a2c8935c185d4c5d6f, type: 2}
-  - HealthChange: 0
-    Choice: -100
-    NextScene: {fileID: 11400000, guid: 0859e95c7c4b64ca4b00aef8d353454c, type: 2}
   activateMinigameIndex: -1
