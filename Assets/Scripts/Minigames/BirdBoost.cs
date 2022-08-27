@@ -13,7 +13,9 @@ public class BirdBoost : MonoBehaviour
     private void FixedUpdate()
     {
         RB.velocity = new Vector2(BirdSpeed, RB.velocity.y);
-        
+
+        var offset = Vector2.Dot(transform.up, Vector2.up) -1f;
+        RB.AddTorque(offset * Time.deltaTime * 20f, ForceMode2D.Impulse);
         currentCooldown -= Time.deltaTime;
         if (currentCooldown > 0f)
         {
