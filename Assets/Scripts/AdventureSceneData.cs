@@ -5,7 +5,7 @@ using UnityEngine;
 public class AdventureSceneData : ScriptableObject
 {
     [SerializeField] private string title;
-    [SerializeField] private Sprite background;
+    [SerializeField] private List<Sprite> backgrounds;
     [SerializeField] [TextArea] private string description;
 
     [SerializeField] private List<PromptData> scenes;
@@ -15,7 +15,7 @@ public class AdventureSceneData : ScriptableObject
     [SerializeField]
     private int activateMinigameIndex = -1;
     public string Title { get => title; set => title = value; }
-    public Sprite Background { get => background; set => background = value; }
+    public List<Sprite> Backgrounds { get => backgrounds; set => backgrounds = value; }
     public string Description { get => description; set => description = value; }
     public List<PromptData> Scenes { get => scenes; set => scenes = value; }
     
