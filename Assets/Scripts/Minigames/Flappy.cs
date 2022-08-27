@@ -27,7 +27,7 @@ public class Flappy : MonoBehaviour
 
         Bird.transform.position = birdStartPosition;
         Bird.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-        
+
         obstacles = new List<Obstacle>();
         for (var i = 0; i < NumObstacles; i += 1)
         {
@@ -49,4 +49,10 @@ public class Flappy : MonoBehaviour
             GameManager.instance.MinigameWon();
         }
     }
+}
+
+
+public class Fighto : MonoBehaviour
+{
+
 }
