@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b61e7817e49b6458daa07879c3e67450, type: 3}
+  m_Name: 3 City of Ruin 1
+  m_EditorClassIdentifier: 
+  title: City of Ruin
+  backgrounds:
+  - {fileID: 21300000, guid: 56d8d79e4ced24e4587ce70c3a85878f, type: 3}
+  description: "\"After walking 300 miles, you come across the ruins of a small city
+    that looks like it was destroyed in a war. You see abandoned vehicles sitting
+    amongst the rubble of what seems like the town square. There is a clothing store
+    with all of the clothes still on the racks and a grocery store with moldy food
+    on the shelves. You assess that this city was destroyed quite some time ago.
+    \n\nYou explore deeper into the ruins, coming across a school. As you get closer,
+    you can hear children laughing and playing. You peer inside and see two children
+    playing some kind of game using pieces of stones.\n\nYou enter the school and
+    are greeted by the children. They invite you to play with them and show you around
+    the school. \n\nThey tell you that the city was destroyed in a war, but they
+    don't seem to know any more details. They seem happy and content in their little
+    world and don't seem to be affected by the destruction of their city.\""
+  scenes:
+  - HealthChange: 0
+    Choice: Next
+    NextScene: {fileID: 11400000, guid: 5b95a3a92aece074dac5bc28592a277c, type: 2}
+  activateMinigameIndex: -1

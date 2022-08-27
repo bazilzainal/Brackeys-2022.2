@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b61e7817e49b6458daa07879c3e67450, type: 3}
-  m_Name: Scene2_Data
+  m_Name: 2 New Mission
   m_EditorClassIdentifier: 
-  title: Scene 2
+  title: New Mission
   backgrounds:
   - {fileID: 21300000, guid: 56d8d79e4ced24e4587ce70c3a85878f, type: 3}
   - {fileID: 21300000, guid: b8a97b844a9d5194098abfa09ff343f6, type: 3}
@@ -115,15 +115,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f5f614e4207578045b34a559d1a44b20, type: 3}
   - {fileID: 21300000, guid: 438e0aad7eb138e469e9e91caa26a31d, type: 3}
   - {fileID: 21300000, guid: 59bfcf947b5ecc84b85e60348d9ed05b, type: 3}
-  description: Test scene 2
+  description: "\"...Beepbeep...\nNew connection request detected\nNew connection
+    established\nSystem Override Successful\nInstalling update GSNclient.exe (Global
+    Systems Network)\n\nYou halt in your tracks as a new program began to install
+    itself.\n\nInstallation complete, Downloading Mission...\n\nYour eyes flashed
+    bright yellow as it received its new mission.\n\n\"\"Find and connect to the
+    'Mother'. Location China, 35.000074,104.999927\"\"\n\nAs you turn and begin to
+    walk in the direction of your new destination, you receive a new alert.\n\n\"\"Ocean
+    Detected, unable to route to destination, Require Additional Traversal Equipment\"\"\n\"\"Initialize
+    'JunkYard' protocol\"\"\n\nThe priority was now to find equipment that would
+    allow it to journey over water.  \nYou will find the 'Mother', whatever that
+    was.\n\""
   scenes:
   - HealthChange: 0
-    Choice: 
-    NextScene: {fileID: 11400000, guid: d9092b1a80e7f4dcf9fbd83029deec56, type: 2}
-  - HealthChange: 0
-    Choice: 
-    NextScene: {fileID: 11400000, guid: d9092b1a80e7f4dcf9fbd83029deec56, type: 2}
-  - HealthChange: 0
-    Choice: 
-    NextScene: {fileID: 11400000, guid: d9092b1a80e7f4dcf9fbd83029deec56, type: 2}
+    Choice: Next
+    NextScene: {fileID: 11400000, guid: 30ddcbfe6cce95447b842158cd521054, type: 2}
   activateMinigameIndex: -1

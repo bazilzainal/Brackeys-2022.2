@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b61e7817e49b6458daa07879c3e67450, type: 3}
+  m_Name: 4 Meeting Humans 1
+  m_EditorClassIdentifier: 
+  title: Meeting Humans
+  backgrounds:
+  - {fileID: 21300000, guid: 56d8d79e4ced24e4587ce70c3a85878f, type: 3}
+  description: '"""GET AWAY FROM THE ROBOT!""
+
+
+    A voice booms from the doorway
+    and a man enters the room. He has a wild look in his eye and is brandishing a
+    laser rifle. The children scatter and the man advances. He seems afraid of you,
+    but somehow curious as well."'
+  scenes:
+  - HealthChange: 0
+    Choice: Neutralize the threat
+    NextScene: {fileID: 11400000, guid: 9af0eeb620a035c448f592fb3456d13a, type: 2}
+  - HealthChange: 0
+    Choice: Try to reason with the man
+    NextScene: {fileID: 11400000, guid: 10c548ead08f30745858d89eabfc2f40, type: 2}
+  activateMinigameIndex: -1
