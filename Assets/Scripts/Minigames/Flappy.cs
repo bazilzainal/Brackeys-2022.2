@@ -46,11 +46,7 @@ public class Flappy : MonoBehaviour
     {
         if (Bird.transform.position.x > TotalDistance)
         {
-            this.gameObject.SetActive(false);
-        }
-        if (InputManager.instance.IsKeyDown(GameKey.Action))
-        {
-
+            GameManager.instance.MinigameWon();
         }
     }
 }

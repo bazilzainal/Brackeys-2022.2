@@ -8,7 +8,7 @@ public class InputManager : Singleton<InputManager>
         switch (action)
         {
             case GameKey.Action:
-                return Input.GetKey(KeyCode.Space);
+                return Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0);
         }
 
         throw new Exception("invalid key");

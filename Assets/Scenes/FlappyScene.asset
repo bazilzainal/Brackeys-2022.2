@@ -10,9 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b61e7817e49b6458daa07879c3e67450, type: 3}
-  m_Name: Scene3_Data
+  m_Name: FlappyScene
   m_EditorClassIdentifier: 
-  title: Scene 3
+  title: Flappy
   background: {fileID: 21300000, guid: 2b3f5ff80efb446928fc656e1f9a5580, type: 3}
-  description: This is the prompt in scene 3. The robot goes to find love.
-  scenes: []
+  description: You win the minigame.
+  scenes:
+  - HealthChange: 0
+    Choice: Next scene
+    NextScene: {fileID: 11400000, guid: 1513be52e34b64a2c8935c185d4c5d6f, type: 2}
+  activateMinigameIndex: 0

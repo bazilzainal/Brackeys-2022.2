@@ -9,7 +9,8 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private AdventureScene scene;
     [SerializeField] private GameObject gameOverPanel;
 
-    // Start is called before the first frame update
+    [SerializeField]
+    private GameObject[] minigames;
     void Start()
     {
         StartGame();
@@ -17,19 +18,33 @@ public class GameManager : Singleton<GameManager>
 
     private void StartGame()
     {
-        
+        CloseMinigames();
         this.scene.BindData(this.StartingScene);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void CloseMinigames()
     {
-        
+        foreach (var minigame in minigames)
+        {
+            minigame.gameObject.SetActive(false);
+        }
     }
 
     public void ResetGame()
     {
         gameOverPanel.SetActive(true);
         StartGame();
+    }
+
+    public void StartMinigame(in int activateMinigameIndex)
+    {
+        scene.gameObject.SetActive(false);
+        this.minigames[activateMinigameIndex].gameObject.SetActive(true);
+    }
+
+    public void MinigameWon()
+    {
+        CloseMinigames();
+        scene.gameObject.SetActive(true);
     }
 }

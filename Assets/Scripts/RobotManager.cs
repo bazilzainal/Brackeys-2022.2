@@ -12,51 +12,44 @@ public class RobotManager : Singleton<RobotManager>
 
     public int Health { get => health; set => health = value; }
 
-    
+
     protected override void Awake()
     {
         base.Awake();
         health = maxHealth;
     }
 
-    public bool AdjustHealth(int amount)
+    public void AdjustHealth(int amount, out bool isDead)
     {
-
-        this.health += amount;
+        this.health = Mathf.Clamp(this.health + amount, 0, this.maxHealth);
 
         if (this.health <= 0)
         {
             ProcessDeath();
+            isDead = true;
         }
-
-        return true;
+        else
+        {
+            isDead = false;
+        }
     }
 
-    public bool IncHealth(int heal)
-    {
-        this.health += heal;
-
-        return true;
-    }
-
-    public bool ProcessDeath()
+    public void ProcessDeath()
     {
         // Call game manager to process death
         this.Health = maxHealth;
         GameManager.instance.ResetGame();
-
-        return true;
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
 

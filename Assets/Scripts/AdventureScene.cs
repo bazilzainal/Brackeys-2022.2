@@ -9,15 +9,14 @@ public class AdventureScene : MonoBehaviour
     [SerializeField] private TMP_Text sceneText;
     [SerializeField] private Image image;
     [SerializeField] private List<AdventureScenePrompt> prompts;
-
-
+    
     public void BindData(AdventureSceneData data)
     {
+        data.OnSceneLoaded();
         title.text = data.Title;
         sceneText.text = data.Description;
         image.sprite = data.Background;
 
-        // TODO: Potential infinite loop
         int i = 0;
         while (i < data.Scenes.Count)
         {
@@ -30,27 +29,18 @@ public class AdventureScene : MonoBehaviour
             prompts[i].gameObject.SetActive(false);
             i++;
         }
-
-
+        
 
     }
 
     private void onClick(PromptData data)
     {
-        BindData(data.PromptChosen());
-
-    }
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        data.PromptChosen(out AdventureSceneData nextScene);
+        if (nextScene == null)
+        {
+            return;
+        }
+        BindData(nextScene);
 
     }
 }
