@@ -9,6 +9,7 @@ public class AdventureScene : MonoBehaviour
     [SerializeField] private TMP_Text sceneText;
     [SerializeField] private Image image;
     [SerializeField] private List<AdventureScenePrompt> prompts;
+    [SerializeField] private Typewriter typeWriter;
     private AdventureSceneData data;
     private float timer;
 
@@ -16,9 +17,10 @@ public class AdventureScene : MonoBehaviour
     public void BindData(AdventureSceneData data)
     {
         this.data = data;
+        sceneText.text = data.Description;
         data.OnSceneLoaded();
         title.text = data.Title;
-        sceneText.text = data.Description;
+        typeWriter.Initialize(sceneText);
         image.sprite = data.Backgrounds[0];
 
         int i = 0;
