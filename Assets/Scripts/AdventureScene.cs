@@ -40,8 +40,8 @@ public class AdventureScene : MonoBehaviour
     private void Update()
     {
 
-        image.sprite = data.Backgrounds[(int)timer % (data.Backgrounds.count)];
-        timer += Time.deltaTime;
+        image.sprite = data.Backgrounds[(int)timer % (data.Backgrounds.Count)];
+        timer += 12*Time.deltaTime;
 
     }
 
