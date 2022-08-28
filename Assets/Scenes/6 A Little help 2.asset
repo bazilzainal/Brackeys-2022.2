@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b61e7817e49b6458daa07879c3e67450, type: 3}
+  m_Name: 6 A Little help 2
+  m_EditorClassIdentifier: 
+  title: A Little Help
+  backgrounds:
+  - {fileID: 21300000, guid: 1098cbc7f3cc943c5b26bfab203c0efa, type: 3}
+  description: '""I.... don''t know"" you replied.
+
+
+    ""How the hell are you out
+    and about?"" asked Daryl
+
+
+    "I.... don''t know" you answered again.
+
+
+    Daryl
+    slowly turns to Astria, giving her a slight nod.
+
+
+    "Maybe we can use him"
+    He softly said to Astria.
+
+
+    He leads you to a large underground bunker, inside
+    it you see about 50 people.
+
+
+    As you walk past, everyone is eyeing you, nervous
+    that a robot is in their presence.
+
+
+    "Welcome to the resistance.." said Daryl.
+
+
+    You
+    arrive at a hangar, a pristine single propeller plane sits in the middle.
+
+
+    "You''re
+    in luck... We have a way to get to China."'
+  scenes:
+  - HealthChange: 0
+    Choice: Next
+    NextScene: {fileID: 11400000, guid: b8fb886b543c9fd4caab27420dd62789, type: 2}
+  activateMinigameIndex: -1
+  UseTypewriter: 0
+  AudioClip: {fileID: 0}
+  giveJetpack: 0

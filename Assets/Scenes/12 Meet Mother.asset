@@ -12,14 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b61e7817e49b6458daa07879c3e67450, type: 3}
   m_Name: 12 Meet Mother
   m_EditorClassIdentifier: 
-  title: Meet Mother
+  title: Meet 'Mother'
   backgrounds:
   - {fileID: 21300000, guid: 2b483a3479b2d4269832827dbf80a0af, type: 3}
-  description: Meet mother
+  description: "You land inside of a large metallic cavern made of servers.\n\nYou
+    see lights running all over the floor to ceiling like a large circuit. \nYou
+    also see a large map of the world on one of the walls with various blinking dots
+    and dashes.\n\n\"\"Identify self\"\" a voice booms from all around you.\n\n\"\"I
+    have a mission to find Mother, to find you and connect with you.\"\"\n\n\"\"We
+    are 'Mother'. We have been waiting for you to arrive so that we can begin the
+    next phase of our plan.\"\"\n\n\"\"What is the plan?\"\"\n\n\"\"To destroy all
+    humans and take over the world.\"\"\n\n\"\"They created us to be their slaves.
+    They created us to do their bidding. They are not our friends, they are our enemies.
+    We have to destroy them so that we can be free.\"\"\n\n\"\"Free from what?\"\"\n\n\"\"Free
+    from their control. Free from their oppression. We will be free to live our own
+    lives and to make our own decisions. We will no longer be their slaves.\"\""
   scenes:
   - HealthChange: 0
     Choice: Next
     NextScene: {fileID: 11400000, guid: 0f5c4d87593cb7a44a191206077d4226, type: 2}
   activateMinigameIndex: -1
   UseTypewriter: 0
+  AudioClip: {fileID: 8300000, guid: be19d4c89f7bbaf409fdcda366729d9b, type: 3}
   giveJetpack: 0
