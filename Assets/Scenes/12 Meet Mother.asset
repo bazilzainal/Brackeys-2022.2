@@ -22,4 +22,5 @@ MonoBehaviour:
     NextScene: {fileID: 11400000, guid: 0f5c4d87593cb7a44a191206077d4226, type: 2}
   activateMinigameIndex: -1
   UseTypewriter: 0
+  AudioClip: {fileID: 8300000, guid: be19d4c89f7bbaf409fdcda366729d9b, type: 3}
   giveJetpack: 0
