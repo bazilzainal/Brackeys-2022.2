@@ -879,7 +879,7 @@ MonoBehaviour:
   MaxBoostTime: 1
   MaxCooldown: 0.1
   RB: {fileID: 45385217103747986}
-  Clip: {fileID: 8300000, guid: bac508afbcbb7554193ea2b214805573, type: 3}
+  Clip: {fileID: 8300000, guid: 28e24b4b86e35a34bb7ff08ca4af8012, type: 3}
 --- !u!114 &1127095680
 MonoBehaviour:
   m_ObjectHideFlags: 0

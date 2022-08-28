@@ -12,11 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b61e7817e49b6458daa07879c3e67450, type: 3}
   m_Name: 16 Ending Jetpack Robots Win
   m_EditorClassIdentifier: 
-  title: Fly into humans
+  title: Robots Win
   backgrounds:
   - {fileID: 21300000, guid: 2b483a3479b2d4269832827dbf80a0af, type: 3}
-  description: You win the minigame.
+  description: '"Daryl pulls out a communication device and activated a signal.
+
+
+    The
+    Task Drones in the cavern all turned towards the center of the cavern, where
+    the ''Brain'' of ''Mother'' was.
+
+
+    You decipher the signal. It was telling
+    all the Task Drones to self destruct at the ''Brain''.
+
+
+    Using the last remaining
+    fuel in your jetpack, you propel yourself towards Daryl and snatch the device
+    away.
+
+
+    You turn off the Self Destruct command and look back to see the Task
+    Drones coming to a halt.
+
+
+    D.E.M.O.N charges towards Daryl and Astria, finishing
+    them off with its lasers at point blank.'
   scenes: []
   activateMinigameIndex: -1
   UseTypewriter: 0
+  AudioClip: {fileID: 0}
   giveJetpack: 0

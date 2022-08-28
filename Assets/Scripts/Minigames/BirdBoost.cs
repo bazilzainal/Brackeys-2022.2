@@ -21,6 +21,7 @@ public class BirdBoost : MonoBehaviour
         {
             return;
         }
+        
         if (InputManager.instance.IsKeyDown(GameKey.Action))
         {
             MusicManager.instance.PlayEffect(Clip);
