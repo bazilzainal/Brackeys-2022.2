@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEditor.U2D.Path.GUIFramework;
 using UnityEngine;
 
 public class Flappy : MonoBehaviour
@@ -44,15 +45,9 @@ public class Flappy : MonoBehaviour
 
     private void Update()
     {
-        if (Bird.transform.position.x > TotalDistance)
+        if (Bird.transform.position.x > TotalDistance || Input.GetKeyDown(KeyCode.F7))
         {
             GameManager.instance.MinigameWon();
         }
     }
-}
-
-
-public class Fighto : MonoBehaviour
-{
-
 }

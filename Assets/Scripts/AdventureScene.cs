@@ -17,10 +17,21 @@ public class AdventureScene : MonoBehaviour
     public void BindData(AdventureSceneData data)
     {
         this.data = data;
-        sceneText.text = data.Description;
         data.OnSceneLoaded();
         title.text = data.Title;
-        typeWriter.Initialize(sceneText);
+
+        if (data.UseTypewriter)
+        {
+            typeWriter.enabled = true;
+            typeWriter.Initialize(data.Description);
+        }
+        else
+        {
+            sceneText.text = data.Description;
+            typeWriter.StopAllCoroutines();
+            typeWriter.enabled = false;
+        }
+
         image.sprite = data.Backgrounds[0];
 
         int i = 0;
@@ -35,16 +46,12 @@ public class AdventureScene : MonoBehaviour
             prompts[i].gameObject.SetActive(false);
             i++;
         }
-        
-
     }
 
     private void Update()
     {
-
         image.sprite = data.Backgrounds[(int)timer % (data.Backgrounds.Count)];
-        timer += 12*Time.deltaTime;
-
+        timer += 12 * Time.deltaTime;
     }
 
     private void onClick(PromptData data)

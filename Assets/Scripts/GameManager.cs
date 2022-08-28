@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
@@ -11,6 +9,9 @@ public class GameManager : Singleton<GameManager>
 
     [SerializeField]
     private GameObject[] minigames;
+
+    public bool HasJetpack;
+
     void Start()
     {
         StartGame();
@@ -33,7 +34,6 @@ public class GameManager : Singleton<GameManager>
     public void ResetGame()
     {
         gameOverPanel.SetActive(true);
-        StartGame();
     }
 
     public void StartMinigame(in int activateMinigameIndex)
@@ -46,5 +46,12 @@ public class GameManager : Singleton<GameManager>
     {
         CloseMinigames();
         scene.gameObject.SetActive(true);
+    }
+
+    public void LoadScene(AdventureSceneData sceneData)
+    {
+        CloseMinigames();
+        scene.gameObject.SetActive(true);
+        this.scene.BindData(sceneData);
     }
 }

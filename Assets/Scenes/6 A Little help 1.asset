@@ -14,14 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: A Little Help
   backgrounds:
-  - {fileID: 21300000, guid: 56d8d79e4ced24e4587ce70c3a85878f, type: 3}
-  description: "\"\"\"China you say..Hmm.\"\" sensing no immediate threat from you,
+  - {fileID: 21300000, guid: 1098cbc7f3cc943c5b26bfab203c0efa, type: 3}
+  description: "\"\"China you say..Hmm.\"\" sensing no immediate threat from you,
     the man lowers his rifle. \n\nAs he moves towards you, beams of light from the
     windows catches his sillouhette and you make him out to be a middle aged man
     with a thick grey beard.\n\nA younger female burst through the door.\n\n\"\"Daryl!
-    Whats going on!?\"\"\n\n\n\nDaryl - The Man\n\nAstria - Soldier\""
+    Whats going on!?\"\"\n\n\nDaryl - The Man\n\nAstria - Soldier"
   scenes:
   - HealthChange: 0
     Choice: Next
     NextScene: {fileID: 11400000, guid: b8fb886b543c9fd4caab27420dd62789, type: 2}
   activateMinigameIndex: -1
+  UseTypewriter: 0
+  giveJetpack: 0

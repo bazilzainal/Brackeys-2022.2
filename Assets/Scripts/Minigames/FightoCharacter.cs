@@ -8,6 +8,8 @@ public class FightoCharacter : MonoBehaviour
 
     [SerializeField]
     private int health;
+    public bool IsDead => health <= 0;
+
 
     public int AttackDamage;
     [SerializeField]
@@ -20,6 +22,7 @@ public class FightoCharacter : MonoBehaviour
 
     [SerializeField]
     private FightoCharacter target;
+    public FightoCharacter Target => target;
 
     private float timer;
 
@@ -30,6 +33,8 @@ public class FightoCharacter : MonoBehaviour
     private Camera cam;
 
     private FightoCharacter[] allCharacters;
+    public AudioClip Clip;
+
     private void Awake()
     {
         allCharacters = GameObject.FindObjectsOfType<FightoCharacter>();
@@ -64,20 +69,39 @@ public class FightoCharacter : MonoBehaviour
         {
             return;
         }
-        
-        var newBullet = Instantiate(bullet, bulletOrigin.position, bulletOrigin.rotation);
+
+        MusicManager.instance.PlayEffect(this.Clip);
+
+        Vector3 vectorToTarget = this.target.transform.position - transform.position;
+        float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
+        Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        var newBullet = Instantiate(bullet, bulletOrigin.position, q);
         newBullet.Init(this, this.target);
     }
 
     public void TakeDamage(FightoCharacter attacker, int attackerAttackDamage)
     {
         this.target = attacker;
-        this.health -= attackerAttackDamage;
-        PlayHitAnim();
-        if (this.health <= 0)
+
+        if (isPlayer)
         {
-            PlayDeathAnim();
+            RobotManager.instance.AdjustHealth(-attackerAttackDamage, out bool isDead);
+            if (isDead)
+            {
+                PlayDeathAnim();
+            }
         }
+        else
+        {
+            this.health -= attackerAttackDamage;
+            if (this.health <= 0)
+            {
+                PlayDeathAnim();
+            }
+        }
+
+        PlayHitAnim();
     }
 
     private void PlayDeathAnim()

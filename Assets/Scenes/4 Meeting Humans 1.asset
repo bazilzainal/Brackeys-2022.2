@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Meeting Humans
   backgrounds:
-  - {fileID: 21300000, guid: 56d8d79e4ced24e4587ce70c3a85878f, type: 3}
-  description: '"""GET AWAY FROM THE ROBOT!""
+  - {fileID: 21300000, guid: 1098cbc7f3cc943c5b26bfab203c0efa, type: 3}
+  description: '""GET AWAY FROM THE ROBOT!""
 
 
     A voice booms from the doorway
     and a man enters the room. He has a wild look in his eye and is brandishing a
     laser rifle. The children scatter and the man advances. He seems afraid of you,
-    but somehow curious as well."'
+    but somehow curious as well.'
   scenes:
   - HealthChange: 0
     Choice: Neutralize the threat
@@ -30,3 +30,5 @@ MonoBehaviour:
     Choice: Try to reason with the man
     NextScene: {fileID: 11400000, guid: 10c548ead08f30745858d89eabfc2f40, type: 2}
   activateMinigameIndex: -1
+  UseTypewriter: 0
+  giveJetpack: 0

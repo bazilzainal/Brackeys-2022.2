@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b61e7817e49b6458daa07879c3e67450, type: 3}
-  m_Name: 13 Mother Explain
+  m_Name: 12 Meet Mother
   m_EditorClassIdentifier: 
-  title: Mother Explains
+  title: Meet Mother
   backgrounds:
   - {fileID: 21300000, guid: 2b483a3479b2d4269832827dbf80a0af, type: 3}
-  description: mother explain
+  description: Meet mother
   scenes:
   - HealthChange: 0
     Choice: Next
-    NextScene: {fileID: 11400000, guid: 984ee608ec45bcc4dbc5f454110fbfc1, type: 2}
+    NextScene: {fileID: 11400000, guid: 0f5c4d87593cb7a44a191206077d4226, type: 2}
   activateMinigameIndex: -1
   UseTypewriter: 0
   giveJetpack: 0

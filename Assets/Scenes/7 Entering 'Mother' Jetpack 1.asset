@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Entering 'Mother' Jetpack
   backgrounds:
-  - {fileID: 21300000, guid: 56d8d79e4ced24e4587ce70c3a85878f, type: 3}
+  - {fileID: 21300000, guid: c3bb3561695ee48f6805322c97ee62f3, type: 3}
   description: '"You fly over a sprawling iron landscape, filled with large buildings
     and tall towers.
 
@@ -26,10 +26,12 @@ MonoBehaviour:
     As you enter the docking bay, another alert appears:
 
 
-    ""We''ve
-    been expecting you..."""'
+    We''ve been
+    expecting you...'
   scenes:
   - HealthChange: 0
-    Choice: 
-    NextScene: {fileID: 0}
-  activateMinigameIndex: -1
+    Choice: Next
+    NextScene: {fileID: 11400000, guid: a0d59374070bcf3498339d7af1c9e9f3, type: 2}
+  activateMinigameIndex: 1
+  UseTypewriter: 0
+  giveJetpack: 0

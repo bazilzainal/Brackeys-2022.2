@@ -9,7 +9,7 @@ public class BirdBoost : MonoBehaviour
     private float currentBoostTime;
     private float currentCooldown;
     public Rigidbody2D RB;
-    
+    public AudioClip Clip;
     private void FixedUpdate()
     {
         RB.velocity = new Vector2(BirdSpeed, RB.velocity.y);
@@ -23,6 +23,7 @@ public class BirdBoost : MonoBehaviour
         }
         if (InputManager.instance.IsKeyDown(GameKey.Action))
         {
+            MusicManager.instance.PlayEffect(Clip);
             currentBoostTime += Time.deltaTime;
             if (currentBoostTime > MaxBoostTime)
             {

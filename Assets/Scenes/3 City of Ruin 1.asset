@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: City of Ruin
   backgrounds:
-  - {fileID: 21300000, guid: 56d8d79e4ced24e4587ce70c3a85878f, type: 3}
-  description: "\"After walking 300 miles, you come across the ruins of a small city
+  - {fileID: 21300000, guid: e567a934b6b7e4232bfb6c22dd3d5e13, type: 3}
+  description: "After walking 300 miles, you come across the ruins of a small city
     that looks like it was destroyed in a war. You see abandoned vehicles sitting
     amongst the rubble of what seems like the town square. There is a clothing store
     with all of the clothes still on the racks and a grocery store with moldy food
@@ -26,9 +26,11 @@ MonoBehaviour:
     are greeted by the children. They invite you to play with them and show you around
     the school. \n\nThey tell you that the city was destroyed in a war, but they
     don't seem to know any more details. They seem happy and content in their little
-    world and don't seem to be affected by the destruction of their city.\""
+    world and don't seem to be affected by the destruction of their city."
   scenes:
   - HealthChange: 0
     Choice: Next
     NextScene: {fileID: 11400000, guid: 5b95a3a92aece074dac5bc28592a277c, type: 2}
   activateMinigameIndex: -1
+  UseTypewriter: 0
+  giveJetpack: 0

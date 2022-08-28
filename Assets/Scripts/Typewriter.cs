@@ -10,6 +10,7 @@ using TMPro;
 
 public class Typewriter : MonoBehaviour
 {
+    [SerializeField]
 	TMP_Text _tmpProText;
 	string writer;
 
@@ -19,38 +20,21 @@ public class Typewriter : MonoBehaviour
 	[SerializeField] bool leadingCharBeforeDelay = false;
 
 	// Use this for initialization
-	public void Initialize(TMP_Text sceneText)
+	public void Initialize(string sceneText)
 	{
-
-		_tmpProText = sceneText;
-		writer = sceneText.text;
+		writer = sceneText;
 		_tmpProText.text = "";
-
-		StartCoroutine("TypeWriterTMP");
-	
+        StopCoroutine(TypeWriterTMP());
+		StartCoroutine(TypeWriterTMP());
 	}
 
 
 	IEnumerator TypeWriterTMP()
 	{
-		_tmpProText.text = leadingCharBeforeDelay ? leadingChar : "";
-
-		yield return new WaitForSeconds(delayBeforeStart);
-
 		foreach (char c in writer)
 		{
-			if (_tmpProText.text.Length > 0)
-			{
-				_tmpProText.text = _tmpProText.text.Substring(0, _tmpProText.text.Length - leadingChar.Length);
-			}
 			_tmpProText.text += c;
-			_tmpProText.text += leadingChar;
 			yield return new WaitForSeconds(timeBtwChars);
-		}
-
-		if (leadingChar != "")
-		{
-			_tmpProText.text = _tmpProText.text.Substring(0, _tmpProText.text.Length - leadingChar.Length);
 		}
 	}
 }

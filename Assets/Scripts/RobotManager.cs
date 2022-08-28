@@ -51,6 +51,11 @@ public class RobotManager : Singleton<RobotManager>
     {
 
     }
+
+    public bool LowHealth()
+    {
+        return this.health <= 20;
+    }
 }
 
 public abstract class Thing { }

@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Trust No One
   backgrounds:
-  - {fileID: 21300000, guid: 56d8d79e4ced24e4587ce70c3a85878f, type: 3}
-  description: '"He falls to the ground with a thud and the laser rifle skitters
-    across the floor out of his reach.
+  - {fileID: 21300000, guid: b808d44acb75f4d95a8f531d11122954, type: 3}
+  description: 'He falls to the ground with a thud and the laser rifle skitters across
+    the floor out of his reach.
 
 
-    Seizing this opportunity, you bolt out
-    the nearest exit back out onto the streets, making your way further into the
-    city''s ruins. You hear the sound of gunfire behind you, but you don''t stop.
+    Seizing this opportunity, you bolt out the
+    nearest exit back out onto the streets, making your way further into the city''s
+    ruins. You hear the sound of gunfire behind you, but you don''t stop.
 
 
     After
@@ -42,49 +42,13 @@ MonoBehaviour:
     the facility. The voice is robotic, and it''s coming from a nearby PA system.
 
 
-    ""Warning.
+    "Warning.
     *STATIC BUZZ* This facility is under Ministry of *STATIC BUZZ* D-d-defense control.
-    Trespassers will be *STATIC BUZZ* P-p-prosecuted to the full extent of the law.""
-
-
-    You
-    ignore the warning and continue deeper into the facility. You eventually come
-    to a room that looks like it was once a laboratory of some kind.
-
-
-    You see
-    a number of machines and hi-tech scientific equipment, but it''s all covered
-    in dust and cobwebs.
-
-
-    In the corner of the facility lay some large wooden
-    crates. You see a large black font on one of the boxes... ""PROPULSION MODULE
-    PROTOTYPE""
-
-
-    You pry open the crate, and find a sleek, angular, propulsion
-    device inside.
-
-
-    You also find a note inside the crate.
-
-
-    ""Warning.
-    This prototype is unstable. Do not use without proper testing.""
-
-
-    Tinkering
-    around for a few moments, a success message comes up in your logs
-
-
-    ""Module
-    is compatible, initiaite attchment sequence..""
-
-
-    After some rounds hovering
-    around the airbase , you jet towards your destination... ''Mother''..."'
+    Trespassers will be *STATIC BUZZ* P-p-prosecuted to the full extent of the law."'
   scenes:
   - HealthChange: 0
     Choice: Next
-    NextScene: {fileID: 11400000, guid: e47486c33b03d6f4ebe67b25a3aaa198, type: 2}
+    NextScene: {fileID: 11400000, guid: b7f1dd9e3bc34d2488a922c2ddf50bff, type: 2}
   activateMinigameIndex: -1
+  UseTypewriter: 0
+  giveJetpack: 0
