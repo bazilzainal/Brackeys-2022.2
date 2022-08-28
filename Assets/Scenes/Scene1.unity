@@ -1189,9 +1189,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 22ebefb3c45857244891ec839e54b7c8, type: 2}
     - target: {fileID: 2682770474698931130, guid: ebd37399e3cd24af3a728543b1620277, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.8569598
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682770474698931130, guid: ebd37399e3cd24af3a728543b1620277, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.8569598
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682770474698931130, guid: ebd37399e3cd24af3a728543b1620277, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682770474698931130, guid: ebd37399e3cd24af3a728543b1620277, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2635417993227441022, guid: 22ebefb3c45857244891ec839e54b7c8, type: 2}
+    - target: {fileID: 2682770474698931130, guid: ebd37399e3cd24af3a728543b1620277, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4292598773
+      objectReference: {fileID: 0}
     - target: {fileID: 3847959807647496490, guid: ebd37399e3cd24af3a728543b1620277, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
